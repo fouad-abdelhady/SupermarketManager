@@ -45,6 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database Manager\Database Operations\CompaniesOperations.cs" />
+    <Compile Include="Database Manager\Database Operations\CustomersOperations.cs" />
+    <Compile Include="Database Manager\Database Operations\MedicienOperations.cs" />
+    <Compile Include="Database Manager\Database Operations\OrdersOperations.cs" />
+    <Compile Include="Database Manager\Database Operations\ShipmentsDatabaseOperations.cs" />
+    <Compile Include="Database Manager\DatabaseManager.cs" />
+    <Compile Include="Database Manager\DatabaseOperations.cs" />
+    <Compile Include="Database Manager\DatabaseVars.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +82,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="UI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
