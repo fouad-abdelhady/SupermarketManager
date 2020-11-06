@@ -11,23 +11,24 @@ namespace Pharmay0._0._2.Database
 {
     class DatabaseManager
     {
+        // @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Supermarket.accdb;"
         private static DatabaseManager databaseManagment = null;
 
         private string connectionString;
         private OleDbConnection db;
         private OleDbCommand comand;
 
-        private DatabaseManager()
+        private DatabaseManager(string connectionString)
         {
-            connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Pharmacy 1.0.0.accdb;";
+            this.connectionString = connectionString;
             comand = new OleDbCommand();
             db = null;
         }
 
-        public static DatabaseManager getDatabaseMangmentObj()
+        public static DatabaseManager getDatabaseMangmentObj(string connectionString)
         {
             if (databaseManagment == null)
-                databaseManagment = new DatabaseManager();
+                databaseManagment = new DatabaseManager(connectionString);
             return databaseManagment;
         }
 
