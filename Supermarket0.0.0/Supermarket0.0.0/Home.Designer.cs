@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.PanelTop = new System.Windows.Forms.Panel();
             this.PanelMainSide = new System.Windows.Forms.Panel();
+            this.ButtonSuppliers = new System.Windows.Forms.Button();
             this.ButtonOrders = new System.Windows.Forms.Button();
             this.ButtonHome = new System.Windows.Forms.Button();
             this.PanelLogo = new System.Windows.Forms.Panel();
             this.PanelPagesContainer = new System.Windows.Forms.Panel();
-            this.ButtonSuppliers = new System.Windows.Forms.Button();
             this.PanelMainSide.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +61,28 @@
             this.PanelMainSide.Name = "PanelMainSide";
             this.PanelMainSide.Size = new System.Drawing.Size(194, 739);
             this.PanelMainSide.TabIndex = 1;
+            // 
+            // ButtonSuppliers
+            // 
+            this.ButtonSuppliers.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ButtonSuppliers.FlatAppearance.BorderSize = 0;
+            this.ButtonSuppliers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            this.ButtonSuppliers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            this.ButtonSuppliers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonSuppliers.Font = new System.Drawing.Font("adwa-assalaf", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.ButtonSuppliers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ButtonSuppliers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonSuppliers.Location = new System.Drawing.Point(0, 289);
+            this.ButtonSuppliers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ButtonSuppliers.Name = "ButtonSuppliers";
+            this.ButtonSuppliers.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
+            this.ButtonSuppliers.Size = new System.Drawing.Size(194, 61);
+            this.ButtonSuppliers.TabIndex = 4;
+            this.ButtonSuppliers.Text = "المورّدين";
+            this.ButtonSuppliers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonSuppliers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtonSuppliers.UseVisualStyleBackColor = true;
+            this.ButtonSuppliers.Click += new System.EventHandler(this.ButtonSuppliers_Click);
             // 
             // ButtonOrders
             // 
@@ -125,28 +147,6 @@
             this.PanelPagesContainer.Name = "PanelPagesContainer";
             this.PanelPagesContainer.Size = new System.Drawing.Size(1176, 739);
             this.PanelPagesContainer.TabIndex = 2;
-            // 
-            // ButtonSuppliers
-            // 
-            this.ButtonSuppliers.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ButtonSuppliers.FlatAppearance.BorderSize = 0;
-            this.ButtonSuppliers.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            this.ButtonSuppliers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
-            this.ButtonSuppliers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonSuppliers.Font = new System.Drawing.Font("adwa-assalaf", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.ButtonSuppliers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ButtonSuppliers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonSuppliers.Location = new System.Drawing.Point(0, 289);
-            this.ButtonSuppliers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ButtonSuppliers.Name = "ButtonSuppliers";
-            this.ButtonSuppliers.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.ButtonSuppliers.Size = new System.Drawing.Size(194, 63);
-            this.ButtonSuppliers.TabIndex = 4;
-            this.ButtonSuppliers.Text = "المورّدين";
-            this.ButtonSuppliers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonSuppliers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ButtonSuppliers.UseVisualStyleBackColor = true;
-            this.ButtonSuppliers.Click += new System.EventHandler(this.ButtonSuppliers_Click);
             // 
             // Home
             // 
