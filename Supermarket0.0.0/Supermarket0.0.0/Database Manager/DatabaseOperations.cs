@@ -22,7 +22,7 @@ namespace Pharmay0._0._2.Database
             this.comand = new OleDbCommand();
         }
 
-       /// <summary>
+        /// <summary>
        /// for insert and update data row 
        /// </summary>
        /// <param name="query"> update or insertion query </param>

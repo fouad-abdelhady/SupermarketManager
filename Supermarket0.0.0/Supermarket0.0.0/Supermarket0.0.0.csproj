@@ -45,22 +45,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database Manager\Database Operations\CompaniesOperations.cs" />
-    <Compile Include="Database Manager\Database Operations\CustomersOperations.cs" />
-    <Compile Include="Database Manager\Database Operations\MedicienOperations.cs" />
-    <Compile Include="Database Manager\Database Operations\OrdersOperations.cs" />
-    <Compile Include="Database Manager\Database Operations\ShipmentsDatabaseOperations.cs" />
     <Compile Include="Database Manager\DatabaseManager.cs" />
     <Compile Include="Database Manager\DatabaseOperations.cs" />
     <Compile Include="Database Manager\DatabaseVars.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\SuppliersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SuppliersForm.Designer.cs">
+      <DependentUpon>SuppliersForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -70,6 +74,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\SuppliersForm.resx">
+      <DependentUpon>SuppliersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -85,7 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Classes\" />
-    <Folder Include="UI\" />
+    <Folder Include="Database Manager\Database Operations\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
