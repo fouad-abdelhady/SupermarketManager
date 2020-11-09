@@ -71,6 +71,7 @@
             this.ButtonSuppliers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonSuppliers.Font = new System.Drawing.Font("adwa-assalaf", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ButtonSuppliers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ButtonSuppliers.Image = ((System.Drawing.Image)(resources.GetObject("ButtonSuppliers.Image")));
             this.ButtonSuppliers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtonSuppliers.Location = new System.Drawing.Point(0, 289);
             this.ButtonSuppliers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -79,8 +80,7 @@
             this.ButtonSuppliers.Size = new System.Drawing.Size(194, 61);
             this.ButtonSuppliers.TabIndex = 4;
             this.ButtonSuppliers.Text = "المورّدين";
-            this.ButtonSuppliers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonSuppliers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtonSuppliers.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.ButtonSuppliers.UseVisualStyleBackColor = true;
             this.ButtonSuppliers.Click += new System.EventHandler(this.ButtonSuppliers_Click);
             // 
@@ -93,6 +93,7 @@
             this.ButtonOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonOrders.Font = new System.Drawing.Font("adwa-assalaf", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ButtonOrders.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ButtonOrders.Image = ((System.Drawing.Image)(resources.GetObject("ButtonOrders.Image")));
             this.ButtonOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ButtonOrders.Location = new System.Drawing.Point(0, 226);
             this.ButtonOrders.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -101,8 +102,7 @@
             this.ButtonOrders.Size = new System.Drawing.Size(194, 63);
             this.ButtonOrders.TabIndex = 3;
             this.ButtonOrders.Text = "الطلبات";
-            this.ButtonOrders.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtonOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.ButtonOrders.UseVisualStyleBackColor = true;
             this.ButtonOrders.Click += new System.EventHandler(this.ButtonOrders_Click);
             // 
@@ -124,8 +124,7 @@
             this.ButtonHome.Size = new System.Drawing.Size(194, 63);
             this.ButtonHome.TabIndex = 2;
             this.ButtonHome.Text = "الرئيسية";
-            this.ButtonHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ButtonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtonHome.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.ButtonHome.UseVisualStyleBackColor = true;
             this.ButtonHome.Click += new System.EventHandler(this.ButtonHome_Click);
             // 

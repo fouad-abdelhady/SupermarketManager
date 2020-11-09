@@ -23,12 +23,15 @@ namespace Supermarket0._0._0
 
         private void setValues()
         {
+            openChildForm(new NewOrder(this));
             activeForm = null;
         }
 
         private void ButtonHome_Click(object sender, EventArgs e)
         {
+
             setActiveStyle(ButtonHome);
+            openChildForm(new NewOrder(this));
         }
 
         private void setActiveStyle(Button activeButton)
