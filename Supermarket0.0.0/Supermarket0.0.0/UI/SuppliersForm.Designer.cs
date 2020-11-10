@@ -96,7 +96,7 @@
             // 
             // ButtonUpdateSupplier
             // 
-            this.ButtonUpdateSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            this.ButtonUpdateSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(44)))), ((int)(((byte)(73)))));
             this.ButtonUpdateSupplier.Enabled = false;
             this.ButtonUpdateSupplier.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.ButtonUpdateSupplier.FlatAppearance.BorderSize = 0;
@@ -185,10 +185,11 @@
             // 
             // PanelUpdateSupplier
             // 
-            this.PanelUpdateSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelUpdateSupplier.BackColor = System.Drawing.Color.White;
+            this.PanelUpdateSupplier.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelUpdateSupplier.Controls.Add(this.LabelUpdateSupplierTitle);
             this.PanelUpdateSupplier.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelUpdateSupplier.ForeColor = System.Drawing.Color.White;
+            this.PanelUpdateSupplier.ForeColor = System.Drawing.Color.Black;
             this.PanelUpdateSupplier.Location = new System.Drawing.Point(0, 0);
             this.PanelUpdateSupplier.Name = "PanelUpdateSupplier";
             this.PanelUpdateSupplier.Size = new System.Drawing.Size(291, 66);
@@ -365,10 +366,11 @@
             // 
             // PanelSuppliersListTitel
             // 
-            this.PanelSuppliersListTitel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelSuppliersListTitel.BackColor = System.Drawing.Color.White;
+            this.PanelSuppliersListTitel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelSuppliersListTitel.Controls.Add(this.LabelSuppliersListTitel);
             this.PanelSuppliersListTitel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSuppliersListTitel.ForeColor = System.Drawing.Color.White;
+            this.PanelSuppliersListTitel.ForeColor = System.Drawing.Color.Black;
             this.PanelSuppliersListTitel.Location = new System.Drawing.Point(0, 0);
             this.PanelSuppliersListTitel.Name = "PanelSuppliersListTitel";
             this.PanelSuppliersListTitel.Size = new System.Drawing.Size(582, 66);
@@ -400,7 +402,7 @@
             // 
             // ButtonAddSupplier
             // 
-            this.ButtonAddSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            this.ButtonAddSupplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(44)))), ((int)(((byte)(73)))));
             this.ButtonAddSupplier.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.ButtonAddSupplier.FlatAppearance.BorderSize = 0;
             this.ButtonAddSupplier.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
@@ -487,10 +489,11 @@
             // 
             // PanelNewSupplierTitel
             // 
-            this.PanelNewSupplierTitel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelNewSupplierTitel.BackColor = System.Drawing.Color.White;
+            this.PanelNewSupplierTitel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelNewSupplierTitel.Controls.Add(this.LabelAddSupplier);
             this.PanelNewSupplierTitel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelNewSupplierTitel.ForeColor = System.Drawing.Color.White;
+            this.PanelNewSupplierTitel.ForeColor = System.Drawing.Color.Black;
             this.PanelNewSupplierTitel.Location = new System.Drawing.Point(0, 0);
             this.PanelNewSupplierTitel.Name = "PanelNewSupplierTitel";
             this.PanelNewSupplierTitel.Size = new System.Drawing.Size(287, 66);

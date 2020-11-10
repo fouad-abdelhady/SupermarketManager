@@ -43,6 +43,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.LabelAddOrderTotalAmount = new System.Windows.Forms.Label();
             this.PanelPayLater = new System.Windows.Forms.Panel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.LabelPayLaterErrorMessage = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ButtonCancelPayLater = new System.Windows.Forms.Button();
@@ -69,7 +70,6 @@
             this.PanelListOfGoods = new System.Windows.Forms.Panel();
             this.PanelGoodsListTitel = new System.Windows.Forms.Panel();
             this.LabelGoodsList = new System.Windows.Forms.Label();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.PanelMakeOrder.SuspendLayout();
             this.PanelPill.SuspendLayout();
             this.PanelTotalPrice.SuspendLayout();
@@ -154,10 +154,12 @@
             // 
             // PanelPayLaterTitel
             // 
-            this.PanelPayLaterTitel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelPayLaterTitel.BackColor = System.Drawing.Color.White;
+            this.PanelPayLaterTitel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelPayLaterTitel.Controls.Add(this.LabelLateFees);
             this.PanelPayLaterTitel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelPayLaterTitel.ForeColor = System.Drawing.Color.White;
+            this.PanelPayLaterTitel.Font = new System.Drawing.Font("adwa-assalaf", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelPayLaterTitel.ForeColor = System.Drawing.Color.Black;
             this.PanelPayLaterTitel.Location = new System.Drawing.Point(0, 0);
             this.PanelPayLaterTitel.Name = "PanelPayLaterTitel";
             this.PanelPayLaterTitel.Size = new System.Drawing.Size(384, 66);
@@ -167,7 +169,7 @@
             // 
             this.LabelLateFees.AutoSize = true;
             this.LabelLateFees.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelLateFees.Location = new System.Drawing.Point(135, 14);
+            this.LabelLateFees.Location = new System.Drawing.Point(159, 14);
             this.LabelLateFees.Name = "LabelLateFees";
             this.LabelLateFees.Size = new System.Drawing.Size(66, 39);
             this.LabelLateFees.TabIndex = 2;
@@ -250,6 +252,21 @@
             this.PanelPayLater.Size = new System.Drawing.Size(509, 307);
             this.PanelPayLater.TabIndex = 25;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("adwa-assalaf", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
+            this.linkLabel1.Location = new System.Drawing.Point(6, 256);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(102, 30);
+            this.linkLabel1.TabIndex = 41;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "أضف عميل جديد";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
+            // 
             // LabelPayLaterErrorMessage
             // 
             this.LabelPayLaterErrorMessage.AutoSize = true;
@@ -296,7 +313,7 @@
             // 
             // ButtonAddToPayLater
             // 
-            this.ButtonAddToPayLater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
+            this.ButtonAddToPayLater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(44)))), ((int)(((byte)(73)))));
             this.ButtonAddToPayLater.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.ButtonAddToPayLater.FlatAppearance.BorderSize = 0;
             this.ButtonAddToPayLater.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
@@ -387,7 +404,7 @@
             // 
             // ButtonPayLater
             // 
-            this.ButtonPayLater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            this.ButtonPayLater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(130)))), ((int)(((byte)(41)))));
             this.ButtonPayLater.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.ButtonPayLater.FlatAppearance.BorderSize = 0;
             this.ButtonPayLater.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
@@ -408,7 +425,7 @@
             // 
             // ButtonPlaceOrder
             // 
-            this.ButtonPlaceOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
+            this.ButtonPlaceOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(44)))), ((int)(((byte)(73)))));
             this.ButtonPlaceOrder.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.ButtonPlaceOrder.FlatAppearance.BorderSize = 0;
             this.ButtonPlaceOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
@@ -428,7 +445,7 @@
             // 
             // ButtonAddToPill
             // 
-            this.ButtonAddToPill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(132)))), ((int)(((byte)(0)))));
+            this.ButtonAddToPill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(44)))), ((int)(((byte)(73)))));
             this.ButtonAddToPill.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.ButtonAddToPill.FlatAppearance.BorderSize = 0;
             this.ButtonAddToPill.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
@@ -539,10 +556,12 @@
             // 
             // PanelMakeOrderTitle
             // 
-            this.PanelMakeOrderTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelMakeOrderTitle.BackColor = System.Drawing.Color.White;
+            this.PanelMakeOrderTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelMakeOrderTitle.Controls.Add(this.LabelNewOrder);
             this.PanelMakeOrderTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelMakeOrderTitle.ForeColor = System.Drawing.Color.White;
+            this.PanelMakeOrderTitle.Font = new System.Drawing.Font("adwa-assalaf", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelMakeOrderTitle.ForeColor = System.Drawing.Color.Black;
             this.PanelMakeOrderTitle.Location = new System.Drawing.Point(0, 0);
             this.PanelMakeOrderTitle.Name = "PanelMakeOrderTitle";
             this.PanelMakeOrderTitle.Size = new System.Drawing.Size(509, 66);
@@ -569,10 +588,12 @@
             // 
             // PanelGoodsListTitel
             // 
-            this.PanelGoodsListTitel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelGoodsListTitel.BackColor = System.Drawing.Color.White;
+            this.PanelGoodsListTitel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelGoodsListTitel.Controls.Add(this.LabelGoodsList);
             this.PanelGoodsListTitel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelGoodsListTitel.ForeColor = System.Drawing.Color.White;
+            this.PanelGoodsListTitel.Font = new System.Drawing.Font("adwa-assalaf", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PanelGoodsListTitel.ForeColor = System.Drawing.Color.Black;
             this.PanelGoodsListTitel.Location = new System.Drawing.Point(0, 0);
             this.PanelGoodsListTitel.Name = "PanelGoodsListTitel";
             this.PanelGoodsListTitel.Size = new System.Drawing.Size(267, 66);
@@ -587,21 +608,6 @@
             this.LabelGoodsList.Size = new System.Drawing.Size(174, 39);
             this.LabelGoodsList.TabIndex = 2;
             this.LabelGoodsList.Text = " قائمة السلع بدون باركود";
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("adwa-assalaf", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
-            this.linkLabel1.Location = new System.Drawing.Point(6, 256);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(102, 30);
-            this.linkLabel1.TabIndex = 41;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "أضف عميل جديد";
-            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
             // 
             // NewOrder
             // 

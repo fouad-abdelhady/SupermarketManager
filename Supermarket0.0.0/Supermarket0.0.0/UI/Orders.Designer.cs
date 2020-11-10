@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Orders));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -38,8 +39,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Orders));
             this.PanelFiltersSection = new System.Windows.Forms.Panel();
+            this.ButtonDeleteOrders = new System.Windows.Forms.Button();
+            this.ButtonApplyFilter = new System.Windows.Forms.Button();
+            this.ComboBoxOrderCondition = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.NumberOfOrders = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,9 +58,6 @@
             this.TabelOrderDetails = new System.Windows.Forms.DataGridView();
             this.PanelMainLeftTitel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.ComboBoxOrderCondition = new System.Windows.Forms.ComboBox();
-            this.ButtonApplyFilter = new System.Windows.Forms.Button();
-            this.ButtonDeleteOrders = new System.Windows.Forms.Button();
             this.PanelFiltersSection.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NumberOfOrders)).BeginInit();
             this.PanelMainRight.SuspendLayout();
@@ -87,6 +87,67 @@
             this.PanelFiltersSection.Name = "PanelFiltersSection";
             this.PanelFiltersSection.Size = new System.Drawing.Size(1160, 175);
             this.PanelFiltersSection.TabIndex = 2;
+            // 
+            // ButtonDeleteOrders
+            // 
+            this.ButtonDeleteOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(13)))), ((int)(((byte)(4)))));
+            this.ButtonDeleteOrders.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.ButtonDeleteOrders.FlatAppearance.BorderSize = 0;
+            this.ButtonDeleteOrders.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.ButtonDeleteOrders.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.ButtonDeleteOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonDeleteOrders.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonDeleteOrders.ForeColor = System.Drawing.Color.White;
+            this.ButtonDeleteOrders.Image = ((System.Drawing.Image)(resources.GetObject("ButtonDeleteOrders.Image")));
+            this.ButtonDeleteOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonDeleteOrders.Location = new System.Drawing.Point(44, 116);
+            this.ButtonDeleteOrders.Name = "ButtonDeleteOrders";
+            this.ButtonDeleteOrders.Size = new System.Drawing.Size(387, 49);
+            this.ButtonDeleteOrders.TabIndex = 47;
+            this.ButtonDeleteOrders.Text = "حذف الطلبات";
+            this.ButtonDeleteOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtonDeleteOrders.UseVisualStyleBackColor = false;
+            this.ButtonDeleteOrders.Click += new System.EventHandler(this.ButtonDeleteOrders_Click);
+            // 
+            // ButtonApplyFilter
+            // 
+            this.ButtonApplyFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(44)))), ((int)(((byte)(73)))));
+            this.ButtonApplyFilter.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.ButtonApplyFilter.FlatAppearance.BorderSize = 0;
+            this.ButtonApplyFilter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.ButtonApplyFilter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.ButtonApplyFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonApplyFilter.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonApplyFilter.ForeColor = System.Drawing.Color.White;
+            this.ButtonApplyFilter.Image = ((System.Drawing.Image)(resources.GetObject("ButtonApplyFilter.Image")));
+            this.ButtonApplyFilter.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonApplyFilter.Location = new System.Drawing.Point(456, 116);
+            this.ButtonApplyFilter.Name = "ButtonApplyFilter";
+            this.ButtonApplyFilter.Size = new System.Drawing.Size(663, 49);
+            this.ButtonApplyFilter.TabIndex = 46;
+            this.ButtonApplyFilter.Text = "تطبيق";
+            this.ButtonApplyFilter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtonApplyFilter.UseVisualStyleBackColor = false;
+            this.ButtonApplyFilter.Click += new System.EventHandler(this.ButtonApplyFilter_Click);
+            // 
+            // ComboBoxOrderCondition
+            // 
+            this.ComboBoxOrderCondition.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComboBoxOrderCondition.BackColor = System.Drawing.Color.White;
+            this.ComboBoxOrderCondition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxOrderCondition.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxOrderCondition.FormattingEnabled = true;
+            this.ComboBoxOrderCondition.Items.AddRange(new object[] {
+            "الكل",
+            "المدفوع",
+            "الغير مدفوع"});
+            this.ComboBoxOrderCondition.Location = new System.Drawing.Point(567, 64);
+            this.ComboBoxOrderCondition.Name = "ComboBoxOrderCondition";
+            this.ComboBoxOrderCondition.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.ComboBoxOrderCondition.Size = new System.Drawing.Size(89, 46);
+            this.ComboBoxOrderCondition.TabIndex = 45;
+            this.ComboBoxOrderCondition.TabStop = false;
             // 
             // label4
             // 
@@ -244,10 +305,11 @@
             // 
             // PanelMainRightTitle
             // 
-            this.PanelMainRightTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelMainRightTitle.BackColor = System.Drawing.Color.White;
+            this.PanelMainRightTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelMainRightTitle.Controls.Add(this.LabelSuppliersListTitel);
             this.PanelMainRightTitle.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelMainRightTitle.ForeColor = System.Drawing.Color.White;
+            this.PanelMainRightTitle.ForeColor = System.Drawing.Color.Black;
             this.PanelMainRightTitle.Location = new System.Drawing.Point(0, 0);
             this.PanelMainRightTitle.Name = "PanelMainRightTitle";
             this.PanelMainRightTitle.Size = new System.Drawing.Size(581, 66);
@@ -344,10 +406,11 @@
             // 
             // PanelMainLeftTitel
             // 
-            this.PanelMainLeftTitel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PanelMainLeftTitel.BackColor = System.Drawing.Color.White;
+            this.PanelMainLeftTitel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelMainLeftTitel.Controls.Add(this.label1);
             this.PanelMainLeftTitel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelMainLeftTitel.ForeColor = System.Drawing.Color.White;
+            this.PanelMainLeftTitel.ForeColor = System.Drawing.Color.Black;
             this.PanelMainLeftTitel.Location = new System.Drawing.Point(0, 0);
             this.PanelMainLeftTitel.Name = "PanelMainLeftTitel";
             this.PanelMainLeftTitel.Size = new System.Drawing.Size(579, 66);
@@ -362,67 +425,6 @@
             this.label1.Size = new System.Drawing.Size(112, 39);
             this.label1.TabIndex = 2;
             this.label1.Text = "تفاصيل الطلب";
-            // 
-            // ComboBoxOrderCondition
-            // 
-            this.ComboBoxOrderCondition.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ComboBoxOrderCondition.BackColor = System.Drawing.Color.White;
-            this.ComboBoxOrderCondition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxOrderCondition.ForeColor = System.Drawing.Color.Black;
-            this.ComboBoxOrderCondition.FormattingEnabled = true;
-            this.ComboBoxOrderCondition.Items.AddRange(new object[] {
-            "الكل",
-            "المدفوع",
-            "الغير مدفوع"});
-            this.ComboBoxOrderCondition.Location = new System.Drawing.Point(567, 64);
-            this.ComboBoxOrderCondition.Name = "ComboBoxOrderCondition";
-            this.ComboBoxOrderCondition.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ComboBoxOrderCondition.Size = new System.Drawing.Size(89, 46);
-            this.ComboBoxOrderCondition.TabIndex = 45;
-            this.ComboBoxOrderCondition.TabStop = false;
-            // 
-            // ButtonApplyFilter
-            // 
-            this.ButtonApplyFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
-            this.ButtonApplyFilter.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.ButtonApplyFilter.FlatAppearance.BorderSize = 0;
-            this.ButtonApplyFilter.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.ButtonApplyFilter.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.ButtonApplyFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonApplyFilter.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonApplyFilter.ForeColor = System.Drawing.Color.White;
-            this.ButtonApplyFilter.Image = ((System.Drawing.Image)(resources.GetObject("ButtonApplyFilter.Image")));
-            this.ButtonApplyFilter.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ButtonApplyFilter.Location = new System.Drawing.Point(456, 116);
-            this.ButtonApplyFilter.Name = "ButtonApplyFilter";
-            this.ButtonApplyFilter.Size = new System.Drawing.Size(663, 49);
-            this.ButtonApplyFilter.TabIndex = 46;
-            this.ButtonApplyFilter.Text = "تطبيق";
-            this.ButtonApplyFilter.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ButtonApplyFilter.UseVisualStyleBackColor = false;
-            this.ButtonApplyFilter.Click += new System.EventHandler(this.ButtonApplyFilter_Click);
-            // 
-            // ButtonDeleteOrders
-            // 
-            this.ButtonDeleteOrders.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(13)))), ((int)(((byte)(4)))));
-            this.ButtonDeleteOrders.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.ButtonDeleteOrders.FlatAppearance.BorderSize = 0;
-            this.ButtonDeleteOrders.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.ButtonDeleteOrders.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.ButtonDeleteOrders.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonDeleteOrders.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonDeleteOrders.ForeColor = System.Drawing.Color.White;
-            this.ButtonDeleteOrders.Image = ((System.Drawing.Image)(resources.GetObject("ButtonDeleteOrders.Image")));
-            this.ButtonDeleteOrders.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ButtonDeleteOrders.Location = new System.Drawing.Point(44, 116);
-            this.ButtonDeleteOrders.Name = "ButtonDeleteOrders";
-            this.ButtonDeleteOrders.Size = new System.Drawing.Size(387, 49);
-            this.ButtonDeleteOrders.TabIndex = 47;
-            this.ButtonDeleteOrders.Text = "حذف الطلبات";
-            this.ButtonDeleteOrders.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ButtonDeleteOrders.UseVisualStyleBackColor = false;
-            this.ButtonDeleteOrders.Click += new System.EventHandler(this.ButtonDeleteOrders_Click);
             // 
             // Orders
             // 
