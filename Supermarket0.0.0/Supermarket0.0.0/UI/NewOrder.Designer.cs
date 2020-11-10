@@ -33,9 +33,26 @@
             this.PanelPill = new System.Windows.Forms.Panel();
             this.PanelPillDetails = new System.Windows.Forms.Panel();
             this.PanelTotalPrice = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
+            this.LabelPillTotalPrice = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.PanelPayLaterTitel = new System.Windows.Forms.Panel();
             this.LabelLateFees = new System.Windows.Forms.Label();
             this.PanelSubMakeOrder = new System.Windows.Forms.Panel();
+            this.LabelNewOrderErrorMessage = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.LabelAddOrderTotalAmount = new System.Windows.Forms.Label();
+            this.PanelPayLater = new System.Windows.Forms.Panel();
+            this.LabelPayLaterErrorMessage = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.ButtonCancelPayLater = new System.Windows.Forms.Button();
+            this.ButtonAddToPayLater = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TextBoxPaidAmount = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ComboBoxCustomersList = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.ButtonPayLater = new System.Windows.Forms.Button();
             this.ButtonPlaceOrder = new System.Windows.Forms.Button();
             this.ButtonAddToPill = new System.Windows.Forms.Button();
@@ -52,32 +69,16 @@
             this.PanelListOfGoods = new System.Windows.Forms.Panel();
             this.PanelGoodsListTitel = new System.Windows.Forms.Panel();
             this.LabelGoodsList = new System.Windows.Forms.Label();
-            this.LabelPillTotalPrice = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.LabelAddOrderTotalAmount = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.ComboBoxCustomersList = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.TextBoxPaidAmount = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.ButtonAddToPayLater = new System.Windows.Forms.Button();
-            this.ButtonCancelPayLater = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.PanelPayLater = new System.Windows.Forms.Panel();
-            this.LabelPayLaterErrorMessage = new System.Windows.Forms.Label();
-            this.LabelNewOrderErrorMessage = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.PanelMakeOrder.SuspendLayout();
             this.PanelPill.SuspendLayout();
             this.PanelTotalPrice.SuspendLayout();
             this.PanelPayLaterTitel.SuspendLayout();
             this.PanelSubMakeOrder.SuspendLayout();
+            this.PanelPayLater.SuspendLayout();
             this.PanelMakeOrderTitle.SuspendLayout();
             this.PanelListOfGoods.SuspendLayout();
             this.PanelGoodsListTitel.SuspendLayout();
-            this.PanelPayLater.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelMakeOrder
@@ -119,6 +120,37 @@
             this.PanelTotalPrice.Name = "PanelTotalPrice";
             this.PanelTotalPrice.Size = new System.Drawing.Size(384, 73);
             this.PanelTotalPrice.TabIndex = 2;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(99, 15);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(46, 39);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "جنيه";
+            // 
+            // LabelPillTotalPrice
+            // 
+            this.LabelPillTotalPrice.AutoSize = true;
+            this.LabelPillTotalPrice.Font = new System.Drawing.Font("Akhbar MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LabelPillTotalPrice.ForeColor = System.Drawing.Color.Black;
+            this.LabelPillTotalPrice.Location = new System.Drawing.Point(178, 23);
+            this.LabelPillTotalPrice.Name = "LabelPillTotalPrice";
+            this.LabelPillTotalPrice.Size = new System.Drawing.Size(24, 31);
+            this.LabelPillTotalPrice.TabIndex = 23;
+            this.LabelPillTotalPrice.Text = "0";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(255, 15);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(95, 39);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "السعر الكلي";
             // 
             // PanelPayLaterTitel
             // 
@@ -164,6 +196,194 @@
             this.PanelSubMakeOrder.Name = "PanelSubMakeOrder";
             this.PanelSubMakeOrder.Size = new System.Drawing.Size(509, 700);
             this.PanelSubMakeOrder.TabIndex = 0;
+            // 
+            // LabelNewOrderErrorMessage
+            // 
+            this.LabelNewOrderErrorMessage.AutoSize = true;
+            this.LabelNewOrderErrorMessage.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelNewOrderErrorMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(13)))), ((int)(((byte)(4)))));
+            this.LabelNewOrderErrorMessage.Location = new System.Drawing.Point(201, 276);
+            this.LabelNewOrderErrorMessage.Name = "LabelNewOrderErrorMessage";
+            this.LabelNewOrderErrorMessage.Size = new System.Drawing.Size(44, 39);
+            this.LabelNewOrderErrorMessage.TabIndex = 41;
+            this.LabelNewOrderErrorMessage.Text = "خطأ";
+            this.LabelNewOrderErrorMessage.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Akhbar MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(202, 138);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(19, 31);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "/";
+            // 
+            // LabelAddOrderTotalAmount
+            // 
+            this.LabelAddOrderTotalAmount.AutoSize = true;
+            this.LabelAddOrderTotalAmount.Font = new System.Drawing.Font("Akhbar MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.LabelAddOrderTotalAmount.ForeColor = System.Drawing.Color.Black;
+            this.LabelAddOrderTotalAmount.Location = new System.Drawing.Point(138, 138);
+            this.LabelAddOrderTotalAmount.Name = "LabelAddOrderTotalAmount";
+            this.LabelAddOrderTotalAmount.Size = new System.Drawing.Size(24, 31);
+            this.LabelAddOrderTotalAmount.TabIndex = 26;
+            this.LabelAddOrderTotalAmount.Text = "5";
+            // 
+            // PanelPayLater
+            // 
+            this.PanelPayLater.Controls.Add(this.linkLabel1);
+            this.PanelPayLater.Controls.Add(this.LabelPayLaterErrorMessage);
+            this.PanelPayLater.Controls.Add(this.label7);
+            this.PanelPayLater.Controls.Add(this.ButtonCancelPayLater);
+            this.PanelPayLater.Controls.Add(this.ButtonAddToPayLater);
+            this.PanelPayLater.Controls.Add(this.label8);
+            this.PanelPayLater.Controls.Add(this.TextBoxPaidAmount);
+            this.PanelPayLater.Controls.Add(this.label9);
+            this.PanelPayLater.Controls.Add(this.label10);
+            this.PanelPayLater.Controls.Add(this.ComboBoxCustomersList);
+            this.PanelPayLater.Controls.Add(this.label6);
+            this.PanelPayLater.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.PanelPayLater.Location = new System.Drawing.Point(0, 393);
+            this.PanelPayLater.Name = "PanelPayLater";
+            this.PanelPayLater.Size = new System.Drawing.Size(509, 307);
+            this.PanelPayLater.TabIndex = 25;
+            // 
+            // LabelPayLaterErrorMessage
+            // 
+            this.LabelPayLaterErrorMessage.AutoSize = true;
+            this.LabelPayLaterErrorMessage.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelPayLaterErrorMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(13)))), ((int)(((byte)(4)))));
+            this.LabelPayLaterErrorMessage.Location = new System.Drawing.Point(348, 190);
+            this.LabelPayLaterErrorMessage.Name = "LabelPayLaterErrorMessage";
+            this.LabelPayLaterErrorMessage.Size = new System.Drawing.Size(44, 39);
+            this.LabelPayLaterErrorMessage.TabIndex = 40;
+            this.LabelPayLaterErrorMessage.Text = "خطأ";
+            this.LabelPayLaterErrorMessage.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Akhbar MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(285, 155);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(44, 31);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "100";
+            // 
+            // ButtonCancelPayLater
+            // 
+            this.ButtonCancelPayLater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(13)))), ((int)(((byte)(4)))));
+            this.ButtonCancelPayLater.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.ButtonCancelPayLater.FlatAppearance.BorderSize = 0;
+            this.ButtonCancelPayLater.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.ButtonCancelPayLater.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.ButtonCancelPayLater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonCancelPayLater.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonCancelPayLater.ForeColor = System.Drawing.Color.White;
+            this.ButtonCancelPayLater.Image = ((System.Drawing.Image)(resources.GetObject("ButtonCancelPayLater.Image")));
+            this.ButtonCancelPayLater.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonCancelPayLater.Location = new System.Drawing.Point(123, 246);
+            this.ButtonCancelPayLater.Name = "ButtonCancelPayLater";
+            this.ButtonCancelPayLater.Size = new System.Drawing.Size(148, 49);
+            this.ButtonCancelPayLater.TabIndex = 38;
+            this.ButtonCancelPayLater.Text = "الغاء";
+            this.ButtonCancelPayLater.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtonCancelPayLater.UseVisualStyleBackColor = false;
+            this.ButtonCancelPayLater.Click += new System.EventHandler(this.ButtonCancelPayLater_Click);
+            // 
+            // ButtonAddToPayLater
+            // 
+            this.ButtonAddToPayLater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
+            this.ButtonAddToPayLater.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.ButtonAddToPayLater.FlatAppearance.BorderSize = 0;
+            this.ButtonAddToPayLater.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.ButtonAddToPayLater.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.ButtonAddToPayLater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonAddToPayLater.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonAddToPayLater.ForeColor = System.Drawing.Color.White;
+            this.ButtonAddToPayLater.Image = ((System.Drawing.Image)(resources.GetObject("ButtonAddToPayLater.Image")));
+            this.ButtonAddToPayLater.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonAddToPayLater.Location = new System.Drawing.Point(277, 246);
+            this.ButtonAddToPayLater.Name = "ButtonAddToPayLater";
+            this.ButtonAddToPayLater.Size = new System.Drawing.Size(220, 49);
+            this.ButtonAddToPayLater.TabIndex = 37;
+            this.ButtonAddToPayLater.Text = "حفظ";
+            this.ButtonAddToPayLater.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.ButtonAddToPayLater.UseVisualStyleBackColor = false;
+            this.ButtonAddToPayLater.Click += new System.EventHandler(this.ButtonAddToPayLater_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(378, 151);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(119, 39);
+            this.label8.TabIndex = 35;
+            this.label8.Text = "المبلغ المطلوب";
+            // 
+            // TextBoxPaidAmount
+            // 
+            this.TextBoxPaidAmount.BackColor = System.Drawing.Color.White;
+            this.TextBoxPaidAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextBoxPaidAmount.Font = new System.Drawing.Font("Akhbar MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.TextBoxPaidAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TextBoxPaidAmount.Location = new System.Drawing.Point(277, 105);
+            this.TextBoxPaidAmount.MaxLength = 20;
+            this.TextBoxPaidAmount.Name = "TextBoxPaidAmount";
+            this.TextBoxPaidAmount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.TextBoxPaidAmount.Size = new System.Drawing.Size(83, 33);
+            this.TextBoxPaidAmount.TabIndex = 34;
+            this.TextBoxPaidAmount.Text = "1";
+            this.TextBoxPaidAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(385, 105);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(112, 39);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "المبلغ المدفوع";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(407, 56);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(90, 39);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "اختار عميل";
+            // 
+            // ComboBoxCustomersList
+            // 
+            this.ComboBoxCustomersList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ComboBoxCustomersList.BackColor = System.Drawing.Color.White;
+            this.ComboBoxCustomersList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCustomersList.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxCustomersList.FormattingEnabled = true;
+            this.ComboBoxCustomersList.Location = new System.Drawing.Point(41, 56);
+            this.ComboBoxCustomersList.Name = "ComboBoxCustomersList";
+            this.ComboBoxCustomersList.Size = new System.Drawing.Size(319, 44);
+            this.ComboBoxCustomersList.Sorted = true;
+            this.ComboBoxCustomersList.TabIndex = 31;
+            this.ComboBoxCustomersList.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("adwa-assalaf", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(200, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(144, 46);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "حفظ كدفع مؤخر";
             // 
             // ButtonPayLater
             // 
@@ -272,14 +492,15 @@
             // 
             this.TextBoxQuantity.BackColor = System.Drawing.Color.White;
             this.TextBoxQuantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBoxQuantity.Font = new System.Drawing.Font("adwa-assalaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBoxQuantity.Font = new System.Drawing.Font("Akhbar MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.TextBoxQuantity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextBoxQuantity.Location = new System.Drawing.Point(267, 134);
             this.TextBoxQuantity.MaxLength = 20;
             this.TextBoxQuantity.Name = "TextBoxQuantity";
             this.TextBoxQuantity.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TextBoxQuantity.Size = new System.Drawing.Size(83, 43);
+            this.TextBoxQuantity.Size = new System.Drawing.Size(83, 33);
             this.TextBoxQuantity.TabIndex = 17;
+            this.TextBoxQuantity.Text = "1";
             this.TextBoxQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
@@ -367,222 +588,20 @@
             this.LabelGoodsList.TabIndex = 2;
             this.LabelGoodsList.Text = " قائمة السلع بدون باركود";
             // 
-            // LabelPillTotalPrice
+            // linkLabel1
             // 
-            this.LabelPillTotalPrice.AutoSize = true;
-            this.LabelPillTotalPrice.Font = new System.Drawing.Font("Akhbar MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.LabelPillTotalPrice.ForeColor = System.Drawing.Color.Black;
-            this.LabelPillTotalPrice.Location = new System.Drawing.Point(178, 23);
-            this.LabelPillTotalPrice.Name = "LabelPillTotalPrice";
-            this.LabelPillTotalPrice.Size = new System.Drawing.Size(24, 31);
-            this.LabelPillTotalPrice.TabIndex = 23;
-            this.LabelPillTotalPrice.Text = "0";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(255, 15);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 39);
-            this.label12.TabIndex = 22;
-            this.label12.Text = "السعر الكلي";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(99, 15);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(46, 39);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "جنيه";
-            // 
-            // LabelAddOrderTotalAmount
-            // 
-            this.LabelAddOrderTotalAmount.AutoSize = true;
-            this.LabelAddOrderTotalAmount.Font = new System.Drawing.Font("Akhbar MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.LabelAddOrderTotalAmount.ForeColor = System.Drawing.Color.Black;
-            this.LabelAddOrderTotalAmount.Location = new System.Drawing.Point(138, 138);
-            this.LabelAddOrderTotalAmount.Name = "LabelAddOrderTotalAmount";
-            this.LabelAddOrderTotalAmount.Size = new System.Drawing.Size(24, 31);
-            this.LabelAddOrderTotalAmount.TabIndex = 26;
-            this.LabelAddOrderTotalAmount.Text = "5";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Akhbar MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(202, 138);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(19, 31);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "/";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("adwa-assalaf", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(200, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(173, 46);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "حفظ كدفع مؤخر";
-            // 
-            // ComboBoxCustomersList
-            // 
-            this.ComboBoxCustomersList.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ComboBoxCustomersList.BackColor = System.Drawing.Color.White;
-            this.ComboBoxCustomersList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCustomersList.ForeColor = System.Drawing.Color.Black;
-            this.ComboBoxCustomersList.FormattingEnabled = true;
-            this.ComboBoxCustomersList.Location = new System.Drawing.Point(41, 56);
-            this.ComboBoxCustomersList.Name = "ComboBoxCustomersList";
-            this.ComboBoxCustomersList.Size = new System.Drawing.Size(319, 44);
-            this.ComboBoxCustomersList.Sorted = true;
-            this.ComboBoxCustomersList.TabIndex = 31;
-            this.ComboBoxCustomersList.TabStop = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(407, 56);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(111, 39);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "اختار عميل";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(385, 105);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(129, 39);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "المبلغ المدفوع";
-            // 
-            // TextBoxPaidAmount
-            // 
-            this.TextBoxPaidAmount.BackColor = System.Drawing.Color.White;
-            this.TextBoxPaidAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBoxPaidAmount.Font = new System.Drawing.Font("adwa-assalaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBoxPaidAmount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TextBoxPaidAmount.Location = new System.Drawing.Point(277, 105);
-            this.TextBoxPaidAmount.MaxLength = 20;
-            this.TextBoxPaidAmount.Name = "TextBoxPaidAmount";
-            this.TextBoxPaidAmount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TextBoxPaidAmount.Size = new System.Drawing.Size(83, 43);
-            this.TextBoxPaidAmount.TabIndex = 34;
-            this.TextBoxPaidAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(378, 151);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(137, 39);
-            this.label8.TabIndex = 35;
-            this.label8.Text = "المبلغ المطلوب";
-            // 
-            // ButtonAddToPayLater
-            // 
-            this.ButtonAddToPayLater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
-            this.ButtonAddToPayLater.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.ButtonAddToPayLater.FlatAppearance.BorderSize = 0;
-            this.ButtonAddToPayLater.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.ButtonAddToPayLater.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.ButtonAddToPayLater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAddToPayLater.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonAddToPayLater.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddToPayLater.Image = ((System.Drawing.Image)(resources.GetObject("ButtonAddToPayLater.Image")));
-            this.ButtonAddToPayLater.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ButtonAddToPayLater.Location = new System.Drawing.Point(277, 246);
-            this.ButtonAddToPayLater.Name = "ButtonAddToPayLater";
-            this.ButtonAddToPayLater.Size = new System.Drawing.Size(220, 49);
-            this.ButtonAddToPayLater.TabIndex = 37;
-            this.ButtonAddToPayLater.Text = "حفظ";
-            this.ButtonAddToPayLater.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ButtonAddToPayLater.UseVisualStyleBackColor = false;
-            this.ButtonAddToPayLater.Click += new System.EventHandler(this.ButtonAddToPayLater_Click);
-            // 
-            // ButtonCancelPayLater
-            // 
-            this.ButtonCancelPayLater.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(13)))), ((int)(((byte)(4)))));
-            this.ButtonCancelPayLater.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.ButtonCancelPayLater.FlatAppearance.BorderSize = 0;
-            this.ButtonCancelPayLater.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.ButtonCancelPayLater.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.ButtonCancelPayLater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonCancelPayLater.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonCancelPayLater.ForeColor = System.Drawing.Color.White;
-            this.ButtonCancelPayLater.Image = ((System.Drawing.Image)(resources.GetObject("ButtonCancelPayLater.Image")));
-            this.ButtonCancelPayLater.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ButtonCancelPayLater.Location = new System.Drawing.Point(123, 246);
-            this.ButtonCancelPayLater.Name = "ButtonCancelPayLater";
-            this.ButtonCancelPayLater.Size = new System.Drawing.Size(148, 49);
-            this.ButtonCancelPayLater.TabIndex = 38;
-            this.ButtonCancelPayLater.Text = "الغاء";
-            this.ButtonCancelPayLater.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.ButtonCancelPayLater.UseVisualStyleBackColor = false;
-            this.ButtonCancelPayLater.Click += new System.EventHandler(this.ButtonCancelPayLater_Click);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Akhbar MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(285, 155);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 31);
-            this.label7.TabIndex = 39;
-            this.label7.Text = "100";
-            // 
-            // PanelPayLater
-            // 
-            this.PanelPayLater.Controls.Add(this.LabelPayLaterErrorMessage);
-            this.PanelPayLater.Controls.Add(this.label7);
-            this.PanelPayLater.Controls.Add(this.ButtonCancelPayLater);
-            this.PanelPayLater.Controls.Add(this.ButtonAddToPayLater);
-            this.PanelPayLater.Controls.Add(this.label8);
-            this.PanelPayLater.Controls.Add(this.TextBoxPaidAmount);
-            this.PanelPayLater.Controls.Add(this.label9);
-            this.PanelPayLater.Controls.Add(this.label10);
-            this.PanelPayLater.Controls.Add(this.ComboBoxCustomersList);
-            this.PanelPayLater.Controls.Add(this.label6);
-            this.PanelPayLater.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PanelPayLater.Location = new System.Drawing.Point(0, 393);
-            this.PanelPayLater.Name = "PanelPayLater";
-            this.PanelPayLater.Size = new System.Drawing.Size(509, 307);
-            this.PanelPayLater.TabIndex = 25;
-            // 
-            // LabelPayLaterErrorMessage
-            // 
-            this.LabelPayLaterErrorMessage.AutoSize = true;
-            this.LabelPayLaterErrorMessage.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelPayLaterErrorMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(13)))), ((int)(((byte)(4)))));
-            this.LabelPayLaterErrorMessage.Location = new System.Drawing.Point(348, 190);
-            this.LabelPayLaterErrorMessage.Name = "LabelPayLaterErrorMessage";
-            this.LabelPayLaterErrorMessage.Size = new System.Drawing.Size(44, 39);
-            this.LabelPayLaterErrorMessage.TabIndex = 40;
-            this.LabelPayLaterErrorMessage.Text = "خطأ";
-            this.LabelPayLaterErrorMessage.Visible = false;
-            // 
-            // LabelNewOrderErrorMessage
-            // 
-            this.LabelNewOrderErrorMessage.AutoSize = true;
-            this.LabelNewOrderErrorMessage.Font = new System.Drawing.Font("adwa-assalaf", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelNewOrderErrorMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(135)))), ((int)(((byte)(13)))), ((int)(((byte)(4)))));
-            this.LabelNewOrderErrorMessage.Location = new System.Drawing.Point(201, 276);
-            this.LabelNewOrderErrorMessage.Name = "LabelNewOrderErrorMessage";
-            this.LabelNewOrderErrorMessage.Size = new System.Drawing.Size(44, 39);
-            this.LabelNewOrderErrorMessage.TabIndex = 41;
-            this.LabelNewOrderErrorMessage.Text = "خطأ";
-            this.LabelNewOrderErrorMessage.Visible = false;
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("adwa-assalaf", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
+            this.linkLabel1.Location = new System.Drawing.Point(6, 256);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(102, 30);
+            this.linkLabel1.TabIndex = 41;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "أضف عميل جديد";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(52)))), ((int)(((byte)(105)))));
             // 
             // NewOrder
             // 
@@ -605,13 +624,13 @@
             this.PanelPayLaterTitel.PerformLayout();
             this.PanelSubMakeOrder.ResumeLayout(false);
             this.PanelSubMakeOrder.PerformLayout();
+            this.PanelPayLater.ResumeLayout(false);
+            this.PanelPayLater.PerformLayout();
             this.PanelMakeOrderTitle.ResumeLayout(false);
             this.PanelMakeOrderTitle.PerformLayout();
             this.PanelListOfGoods.ResumeLayout(false);
             this.PanelGoodsListTitel.ResumeLayout(false);
             this.PanelGoodsListTitel.PerformLayout();
-            this.PanelPayLater.ResumeLayout(false);
-            this.PanelPayLater.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -658,5 +677,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox ComboBoxCustomersList;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

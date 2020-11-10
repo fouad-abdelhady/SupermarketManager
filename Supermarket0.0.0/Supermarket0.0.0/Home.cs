@@ -53,6 +53,7 @@ namespace Supermarket0._0._0
         private void ButtonOrders_Click(object sender, EventArgs e)
         {
             setActiveStyle(ButtonOrders);
+            openChildForm(new Orders(this));
         }
 
         private void ButtonSuppliers_Click(object sender, EventArgs e)
