@@ -118,27 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ButtonCancelPayLater.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAQNJREFUWEft
-        lsERwiAQRXOwIPvIIQcLSSkpxBI94MPwFUeMgMBp38yOhMDfN9EwToZhGAmcc+cwrKZFxgOCVsqzhqli
-        2LtRN+oSpuogYKZiiqXY42WEl6p/Umw+UVefFJEtxdpYxrOFW/UQUiXFmvYygrAiKe71kxGEZkkx119G
-        EH4oxXicjKBJUooaLyNolpKKGScjaPpNaryM8M13hzeyz6mm0DglI8ZK0fDjB0z9PBK6QKPk28Rn1jnV
-        FBokZQTX46QIPpQRzPeXIjBLRnC/nxRBRTKCde2lCFj2nCdZMoL1Kan//soSoCdUJCPYF0s1+9qWMKyC
-        /V5qDpeGYRgvpukOlCLoxz09I3UAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="ButtonAddToPayLater.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAU5JREFUWEft
-        liFaw0AQhSMqKzkAB+gBuANHqEAgEAgEoqKisgeo6EE4UCUSgUAgwj/Jw80mu3Q2hv2/74num5153yZN
-        0jUatej7/gY9o0OwXtBGY/Jgwwl9oZrsNG4aCu/H+up8orXGpqHIjnUpnjQ2DUVLBjpobBorGmuz+EZ7
-        VHaTlkDzkkAnbasHQ0oC1TuZXxiSHUhbBrT0J9TCB78FUgsf/MhA9vCbfeKrhQ9+VCDrs0b2TjzbQgq1
-        8MGPCPSOVrLMs1DJk1KZD35EoIuWB/htJ/UxOA4q88GPumSPWl+hyZ5DgxT4UYGMC7LLN4la+OBHBspC
-        LXzwWyC18MHPDgTzX3zXwpCSQA/aVg+GlASyV8MR3Wp7PDQvCXQtWZ+w9km6FK8am4aizVi7CHcaOw2F
-        b2N9Vc4aNw/F9v7ZIruforVD9f4EjX9O1/0A9mzn7drL8eAAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="ButtonPayLater.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAqBJREFUWEft
@@ -179,6 +158,27 @@
         IFmsjfKmwCLkSGhpuuR3kDsNLGOmqcUQJE+MD3LfXSJ5bfj8M8KdblsMQWc2thaWjyYE1XmMlPsdR6A7
         G1fFRLdbDsE3NqdSih/3NATL0/Zq0qohd/z9FRLkp80RSk93f9UB8itmzZrSNBo/gcuJDCfIVUIAAAAA
         SUVORK5CYII=
+</value>
+  </data>
+  <data name="ButtonCancelPayLater.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAQNJREFUWEft
+        lsERwiAQRXOwIPvIIQcLSSkpxBI94MPwFUeMgMBp38yOhMDfN9EwToZhGAmcc+cwrKZFxgOCVsqzhqli
+        2LtRN+oSpuogYKZiiqXY42WEl6p/Umw+UVefFJEtxdpYxrOFW/UQUiXFmvYygrAiKe71kxGEZkkx119G
+        EH4oxXicjKBJUooaLyNolpKKGScjaPpNaryM8M13hzeyz6mm0DglI8ZK0fDjB0z9PBK6QKPk28Rn1jnV
+        FBokZQTX46QIPpQRzPeXIjBLRnC/nxRBRTKCde2lCFj2nCdZMoL1Kan//soSoCdUJCPYF0s1+9qWMKyC
+        /V5qDpeGYRgvpukOlCLoxz09I3UAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ButtonAddToPayLater.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAABGdBTUEAALGPC/xhBQAAAU5JREFUWEft
+        liFaw0AQhSMqKzkAB+gBuANHqEAgEAgEoqKisgeo6EE4UCUSgUAgwj/Jw80mu3Q2hv2/74num5153yZN
+        0jUatej7/gY9o0OwXtBGY/Jgwwl9oZrsNG4aCu/H+up8orXGpqHIjnUpnjQ2DUVLBjpobBorGmuz+EZ7
+        VHaTlkDzkkAnbasHQ0oC1TuZXxiSHUhbBrT0J9TCB78FUgsf/MhA9vCbfeKrhQ9+VCDrs0b2TjzbQgq1
+        8MGPCPSOVrLMs1DJk1KZD35EoIuWB/htJ/UxOA4q88GPumSPWl+hyZ5DgxT4UYGMC7LLN4la+OBHBspC
+        LXzwWyC18MHPDgTzX3zXwpCSQA/aVg+GlASyV8MR3Wp7PDQvCXQtWZ+w9km6FK8am4aizVi7CHcaOw2F
+        b2N9Vc4aNw/F9v7ZIruforVD9f4EjX9O1/0A9mzn7drL8eAAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

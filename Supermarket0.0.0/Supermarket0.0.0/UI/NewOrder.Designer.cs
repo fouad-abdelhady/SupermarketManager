@@ -40,8 +40,6 @@
             this.LabelLateFees = new System.Windows.Forms.Label();
             this.PanelSubMakeOrder = new System.Windows.Forms.Panel();
             this.LabelNewOrderErrorMessage = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.LabelAddOrderTotalAmount = new System.Windows.Forms.Label();
             this.PanelPayLater = new System.Windows.Forms.Panel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.LabelPayLaterErrorMessage = new System.Windows.Forms.Label();
@@ -70,6 +68,7 @@
             this.PanelListOfGoods = new System.Windows.Forms.Panel();
             this.PanelGoodsListTitel = new System.Windows.Forms.Panel();
             this.LabelGoodsList = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.PanelMakeOrder.SuspendLayout();
             this.PanelPill.SuspendLayout();
             this.PanelTotalPrice.SuspendLayout();
@@ -177,9 +176,8 @@
             // 
             // PanelSubMakeOrder
             // 
+            this.PanelSubMakeOrder.Controls.Add(this.listBox1);
             this.PanelSubMakeOrder.Controls.Add(this.LabelNewOrderErrorMessage);
-            this.PanelSubMakeOrder.Controls.Add(this.label11);
-            this.PanelSubMakeOrder.Controls.Add(this.LabelAddOrderTotalAmount);
             this.PanelSubMakeOrder.Controls.Add(this.PanelPayLater);
             this.PanelSubMakeOrder.Controls.Add(this.ButtonPayLater);
             this.PanelSubMakeOrder.Controls.Add(this.ButtonPlaceOrder);
@@ -210,28 +208,6 @@
             this.LabelNewOrderErrorMessage.TabIndex = 41;
             this.LabelNewOrderErrorMessage.Text = "خطأ";
             this.LabelNewOrderErrorMessage.Visible = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Akhbar MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(202, 138);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(19, 31);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "/";
-            // 
-            // LabelAddOrderTotalAmount
-            // 
-            this.LabelAddOrderTotalAmount.AutoSize = true;
-            this.LabelAddOrderTotalAmount.Font = new System.Drawing.Font("Akhbar MT", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.LabelAddOrderTotalAmount.ForeColor = System.Drawing.Color.Black;
-            this.LabelAddOrderTotalAmount.Location = new System.Drawing.Point(138, 138);
-            this.LabelAddOrderTotalAmount.Name = "LabelAddOrderTotalAmount";
-            this.LabelAddOrderTotalAmount.Size = new System.Drawing.Size(24, 31);
-            this.LabelAddOrderTotalAmount.TabIndex = 26;
-            this.LabelAddOrderTotalAmount.Text = "5";
             // 
             // PanelPayLater
             // 
@@ -536,11 +512,11 @@
             this.TextBoxPareCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TextBoxPareCode.Font = new System.Drawing.Font("adwa-assalaf", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxPareCode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.TextBoxPareCode.Location = new System.Drawing.Point(72, 85);
+            this.TextBoxPareCode.Location = new System.Drawing.Point(20, 85);
             this.TextBoxPareCode.MaxLength = 20;
             this.TextBoxPareCode.Name = "TextBoxPareCode";
             this.TextBoxPareCode.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.TextBoxPareCode.Size = new System.Drawing.Size(278, 43);
+            this.TextBoxPareCode.Size = new System.Drawing.Size(330, 43);
             this.TextBoxPareCode.TabIndex = 15;
             this.TextBoxPareCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -609,6 +585,23 @@
             this.LabelGoodsList.TabIndex = 2;
             this.LabelGoodsList.Text = " قائمة السلع بدون باركود";
             // 
+            // listBox1
+            // 
+            this.listBox1.Font = new System.Drawing.Font("adwa-assalaf", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 29;
+            this.listBox1.Items.AddRange(new object[] {
+            "8 / 12 / 2020",
+            "5 / 10 / 2020",
+            "1/ 11 / 2020",
+            "4/ 6 / 2020",
+            "15/ 3 / 2020",
+            "22/ 8 / 2020"});
+            this.listBox1.Location = new System.Drawing.Point(20, 134);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(114, 33);
+            this.listBox1.TabIndex = 42;
+            // 
             // NewOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 36F);
@@ -669,8 +662,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label LabelPillTotalPrice;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label LabelAddOrderTotalAmount;
         private System.Windows.Forms.Label LabelNewOrderErrorMessage;
         private System.Windows.Forms.Panel PanelPayLater;
         private System.Windows.Forms.Label LabelPayLaterErrorMessage;
@@ -684,5 +675,6 @@
         private System.Windows.Forms.ComboBox ComboBoxCustomersList;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
